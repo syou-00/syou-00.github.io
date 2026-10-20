@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet" />
+    <title>Travel Log - 2023年6月 青森</title>
+</head>
+
+<body>
+    <header class="header">
+        <button class="hamburger_btn" id="hamburger" aria-label="メニューを開閉">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav class="nav_menu" id="navMenu">
+            <ul class="nav_list">
+                <li class="nav_item"><a href="index.html" class="nav_link">ホーム</a></li>
+                <li class="nav_item"><a href="202605Yokohama.html" class="nav_link">2026年5月 横浜・江ノ島</a></li>
+                <li class="nav_item"><a href="202502Tokyo.html" class="nav_link">2025年2月 東京・お台場</a></li>
+                <li class="nav_item"><a href="202502Yokohama.html" class="nav_link">2025年2月 横浜</a></li>
+                <li class="nav_item"><a href="202408Tokyo.html" class="nav_link">2024年8月 東京・横浜</a></li>
+                <li class="nav_item"><a href="202408Iwate.html" class="nav_link">2024年8月 岩手</a></li>
+                <li class="nav_item"><a href="202306Aomori.html" class="nav_link">2023年6月 青森</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page_header" style="background-image: url('img/202306Aomori/Sky_1.jpg');">
+        </section>
+
+        <section class="trip_info_cont">
+            <div class="trip_left-section">
+                <div class="trip_topic">
+                    <h2 class="trip_label goto">行先</h2>
+                    <p class="trip_value">青森</p>
+                    <h2 class="trip_label data">日程</h2>
+                    <p class="trip_value">2023年6月17日~18日</p>
+                </div>
+            </div>
+            <div class="trip_right-section">
+                <div class="trip_plan_li">
+                    <h2 class="trip_label plan">目的</h2>
+                    <ul>
+                        <li>
+                            <p class="trip_value">
+                                <a>青森県立美術館に行く</a>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="trip_topic">
+                    <h2 class="trip_label memo">行ってみて</h2>
+                    <p class="trip_value">思いがけずいろいろな所をめぐれて楽しかった</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="photo_slider_section">
+            <div class="slider_container">
+                <div class="slider_track_wrapper">
+                    <div class="photo_list slider_track" id="sliderTrack">
+                        <div class="photo_item">
+                            <img src="img/202306Aomori/ruins_1.jpg" alt="三内丸山遺跡内の建造物の写真" width="400" height="300" />
+                            <p class="photo_text">美術館の開館前に訪れた三内丸山遺跡での一枚<br>歴史を感じられる場所だった</p>
+                        </div>
+                        <div class="photo_item">
+                            <p class="photo_text">美術館にあった「あおもり犬」のオブジェ<br>かなり大きくて少し不気味だった</p>
+                            <img src="img/202306Aomori/ArtMuseum.jpg" alt="美術館にあった「あおもり犬」のオブジェ 大きくて白い犬が屋外に設置されている"
+                                width="400" height="300" />
+                        </div>
+                        <div class="photo_item">
+                            <img src="img/202306Aomori/Aquarium_1.jpg" alt="クラゲの水槽の写真" width="400" height="300" />
+                            <p class="photo_text">小さめの水族館の中でクラゲを見れた</p>
+                        </div>
+                        <div class="photo_item">
+                            <p class="photo_text">種差海岸で飲んだメロンフロート</p>
+                            <img src="img/202306Aomori/Food_1.jpg" alt="小さい傘のささったメロンフロートの写真" width="400" height="300" />
+                        </div>
+                        <div class="photo_item">
+                            <img src="img/202306Aomori/Sky_1.jpg" alt="晴天の写真 雲がまばらにある" width="400" height="300" />
+                            <p class="photo_text">青森に向かう際の空写真<br>朝の景色だったので、とても心地よかった</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer class="footer"
+        style="text-align: center; padding: 40px 20px; background-color: #f8f9fa; color: #666; margin-top: 60px; border-top: 1px solid #eaeaea;">
+        <p style="font-size: 0.9rem; margin-bottom: 8px;">Travel Log</p>
+        <p style="font-size: 0.8rem; margin-bottom: 16px;">
+            <a href="https://github.com/syou-00/syou-00.github.io" target="_blank" rel="noopener noreferrer"
+                style="color: #0066cc; text-decoration: underline;">GitHubでソースコードを見る</a>
+        </p>
+    </footer>
+
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+
+        <button class="modal_btn modal_prev" id="modalPrev" aria-label="前の画像へ">&#10094;</button>
+        <img class="modal-content" id="modalImage" alt="拡大画像">
+        <button class="modal_btn modal_next" id="modalNext" aria-label="次の画像へ">&#10095;</button>
+    </div>
+
+
+    <script src="script.js"></script>
+
+    <button class="back_to_top" id="backToTop" aria-label="ページ上部へ戻る">
+        <svg class="top_arrow_icon" viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2.5"
+            fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="12" y1="19" x2="12" y2="5"></line>
+            <polyline points="5 12 12 5 19 12"></polyline>
+        </svg>
+    </button>
+
+</body>
+
+</html>
